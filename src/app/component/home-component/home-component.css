@@ -1,0 +1,17 @@
+#div-home{
+    width: 80%;
+    height: 80%;
+    margin: 30% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+h1{
+    color: var(--cor1);
+}
+
+#veiculos-servicos{
+    color: var(--cor2);
+}
