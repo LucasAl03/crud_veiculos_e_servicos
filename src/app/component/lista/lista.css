@@ -1,0 +1,19 @@
+#div-lista{
+    width: 98%;
+    min-height: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    color: var(--cor1);
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.div-veiculos{
+    display: flex;
+    align-items: center;
+}
