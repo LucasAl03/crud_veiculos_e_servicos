@@ -1,1 +1,40 @@
-<p>formulario works!</p>
+<div class="div-form">
+    <h2>Cadastro de Veículos e Valor de Serviço</h2>
+
+    <form class="formulario">
+        <label for="marca_veiculo">Marca</label>
+        <input type="text" id="marca_veiculo" name="marca_veiculo" [(ngModel)]="marca_veiculo">
+
+        <label for="modelo_veiculo">Modelo</label>
+        <input type="text" id="modelo_veiculo" name="modelo_veiculo" [(ngModel)]="modelo_veiculo">
+
+        <label for="placa_veiculo">Placa</label>
+        <input type="text" id="placa_veiculo" name="placa_veiculo" [(ngModel)]="placa_veiculo" maxlength="7">
+
+        <label for="cambio_veiculo">Tipo de Câmbio</label>
+        <select name="cambio_veiculo" id="cambio_veiculo" [(ngModel)]="cambio_veiculo">
+            <option value="autcam">Automático</option>
+            <option value="mancam">Manual</option>
+        </select>
+
+        <label for="movido_veiculo">Movido à</label>
+        <select name="movido_veiculo" id="movido_veiculo" [(ngModel)]="movido_veiculo">
+            <option value="gas">Gasolina</option>
+            <option value="eta">Etanol</option>
+            <option value="flex">Flex</option>
+            <option value="die">Diesel</option>
+            <option value="elet">Elétrico</option>
+        </select>
+
+        <label for="servico_veiculo">Serviço</label>
+        <input type="text" id="servico_veiculo" name="servico_veiculo" [(ngModel)]="servico_veiculo">
+
+        <label for="valor_servico">Valor do Servico</label>
+        <input type="number" id="valor_servico" name="valor_servico" [(ngModel)]="valor_servico">
+
+        <div class="div-btns">
+            <button type="submit" id="btnAdd">Adicionar</button>
+            <button type="button" id="btnLimpar">Limpar</button>
+        </div>
+    </form>
+</div>
