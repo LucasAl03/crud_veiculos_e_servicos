@@ -7,10 +7,15 @@
     font-family: roboto;
 }
 
+body{
+    background-color: var(--branco);
+}
+
 :root{
-    --branco: #ffffff;
-    --botao1: #b86b2c;
-    --botao2: #ad9731;
-    --cor1: #cf785d;
-    --cor2: #e64819;
+    --branco: #F8FAFC;
+    --botao1: #BFDBFE;
+    --botao2: #2563EB;
+    --menu: #1E293B;
+    --cinza: #1E293B;
+    --cinza2: #64748B;
 }
