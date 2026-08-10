@@ -3,22 +3,22 @@
 
     <form class="formulario">
         <label for="marca_veiculo">Marca</label>
-        <input type="text" id="marca_veiculo" name="marca_veiculo" [(ngModel)]="marca_veiculo">
+        <input type="text" id="marca_veiculo" name="marca_veiculo" [(ngModel)]="marca_veiculo" required>
 
         <label for="modelo_veiculo">Modelo</label>
-        <input type="text" id="modelo_veiculo" name="modelo_veiculo" [(ngModel)]="modelo_veiculo">
+        <input type="text" id="modelo_veiculo" name="modelo_veiculo" [(ngModel)]="modelo_veiculo" required>
 
         <label for="placa_veiculo">Placa</label>
-        <input type="text" id="placa_veiculo" name="placa_veiculo" [(ngModel)]="placa_veiculo" maxlength="7">
+        <input type="text" id="placa_veiculo" name="placa_veiculo" [(ngModel)]="placa_veiculo" maxlength="7" required>
 
         <label for="cambio_veiculo">Tipo de Câmbio</label>
-        <select name="cambio_veiculo" id="cambio_veiculo" [(ngModel)]="cambio_veiculo">
+        <select name="cambio_veiculo" id="cambio_veiculo" [(ngModel)]="cambio_veiculo" required>
             <option value="Automático">Automático</option>
             <option value="Manual">Manual</option>
         </select>
 
         <label for="movido_veiculo">Movido à</label>
-        <select name="movido_veiculo" id="movido_veiculo" [(ngModel)]="movido_veiculo">
+        <select name="movido_veiculo" id="movido_veiculo" [(ngModel)]="movido_veiculo" required>
             <option value="Gasolina">Gasolina</option>
             <option value="Etanol">Etanol</option>
             <option value="Flex">Flex</option>
@@ -27,10 +27,10 @@
         </select>
 
         <label for="servico_veiculo">Serviço</label>
-        <input type="text" id="servico_veiculo" name="servico_veiculo" [(ngModel)]="servico_veiculo">
+        <input type="text" id="servico_veiculo" name="servico_veiculo" [(ngModel)]="servico_veiculo" required>
 
         <label for="valor_servico">Valor do Servico</label>
-        <input type="number" id="valor_servico" name="valor_servico" [(ngModel)]="valor_servico">
+        <input type="number" id="valor_servico" name="valor_servico" [(ngModel)]="valor_servico" required>
 
         <div class="div-btns">
             <button type="submit" id="btnAdd" (click)="save()">{{edit ? 'Alterar' : 'Adicionar'}}</button>
