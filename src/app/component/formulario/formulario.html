@@ -33,8 +33,8 @@
         <input type="number" id="valor_servico" name="valor_servico" [(ngModel)]="valor_servico">
 
         <div class="div-btns">
-            <button type="submit" id="btnAdd">Adicionar</button>
-            <button type="button" id="btnLimpar">Limpar</button>
+            <button type="submit" id="btnAdd" (click)="save()">{{edit ? 'Alterar' : 'Adicionar'}}</button>
+            <button type="button" id="btnLimpar" (click)="limparAtributos()">Limpar</button>
         </div>
     </form>
 </div>
