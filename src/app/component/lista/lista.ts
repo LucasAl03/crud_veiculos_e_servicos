@@ -1,4 +1,4 @@
-import { Component, numberAttribute } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { VeiculosServicoService } from '../../services/veiculos-servico-service';
 
@@ -6,9 +6,11 @@ import { Veiculo } from '../../models/veiculo';
 
 import { Router } from '@angular/router';
 
+import { Pesquisa } from '../pesquisa/pesquisa';
+
 @Component({
   selector: 'app-lista',
-  imports: [],
+  imports: [Pesquisa],
   templateUrl: './lista.html',
   styleUrl: './lista.css',
 })
