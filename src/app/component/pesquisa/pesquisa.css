@@ -1,0 +1,14 @@
+
+.pesquisa{
+    color: var(--cor1);
+    font-size: 1.5em;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+
+.barra-pesquisa{
+    margin-left: 5%;
+    width: 40%;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
