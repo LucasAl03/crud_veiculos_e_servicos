@@ -1,9 +1,19 @@
 <div id="div-lista">
     <h1>Lista de Veículos</h1>
     <div id="div-veiculos">
-            <div class="div-veiculo"> elem.idVeiculo - Marca: elem.marcaVeiculo - Modelo: elem.modeloVeiculo - Placa: elem.placaVeiculo - Cambio: elem.cambioVeiculo - Movido à: elem.movidoVeiculo - Serviço: elem.servicoVeiculo - Valor do Serviço: R$ elem.valorServico?.toFixed(2)?.replace('.',',') </div>
+        @for(elem of listar(); track elem.id){
+            <div class="div-item">
+                <span class="item-veiculo">
+                    {{elem.id}} - Marca: {{elem.marcaVeiculo}} - Modelo: {{elem.modeloVeiculo}} - Placa: {{elem.placaVeiculo}} - Cambio: {{elem.cambioVeiculo}} - Movido à: {{elem.movidoVeiculo}} - Serviço: {{elem.servicoVeiculo}} - Valor do Serviço: R$ {{elem.valorVeiculo?.toFixed(2)?.replace('.',',')}}
+                </span>
+                <span>
+                    <a class="lnk-editar" (click)="buscaId(elem)"> Editar </a>
+                    <a class="lnk-excluir" (click)="excluir(elem)"> Excluir </a>
+                </span>
+            </div>
+        }@empty{
+            <div class="div-item"> VEICULOS NÃO ADICIONANDOS! </div>
+        }
           
-                <div class="div-veiculo"> VEICULOS NÃO ADICIONANDOS! </div>
-       
     </div>
 </div>
