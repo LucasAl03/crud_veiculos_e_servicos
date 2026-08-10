@@ -1,14 +1,12 @@
+<app-pesquisa></app-pesquisa>
 <div id="div-lista">
     <h1>Lista de Veículos</h1>
-
-    <div class="pesquisa">Pesquisa</div>
-    <input type="text" class="barra-pesquisa" placeholder="Pesquisa de veículos" >
 
     <div id="div-veiculos">
         @for(elem of listar(); track elem.id){
             <div class="div-item">
                 <span class="item-veiculo">
-                    {{elem.id}} - Marca: {{elem.marcaVeiculo}} - Modelo: {{elem.modeloVeiculo}} - Placa: {{elem.placaVeiculo}} - Cambio: {{elem.cambioVeiculo}} - Movido à: {{elem.movidoVeiculo}} - Serviço: {{elem.servicoVeiculo}} - Valor do Serviço: R$ {{elem.valorVeiculo?.toFixed(2)?.replace('.',',')}}
+                    {{elem.id}} - Marca: {{elem.marcaVeiculo}} - Modelo: {{elem.modeloVeiculo}} - Placa: {{elem.placaVeiculo}} - Cambio: {{elem.cambioVeiculo}} - Motorização: {{elem.movidoVeiculo}} - Serviço: {{elem.servicoVeiculo}} - Valor do Serviço: R$ {{elem.valorVeiculo?.toFixed(2)?.replace('.',',')}}
                 </span>
                 <span>
                     <a class="lnk-editar" (click)="buscaId(elem)"> Editar </a>
