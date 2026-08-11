@@ -88,27 +88,42 @@ export class Formulario {
   save(){
     const veiculo = new Veiculo();
 
-    veiculo.marcaVeiculo = this.marca_veiculo;
-    veiculo.modeloVeiculo = this.modelo_veiculo;
-    veiculo.placaVeiculo = this.placa_veiculo;
-    veiculo.cambioVeiculo = this.cambio_veiculo;
-    veiculo.movidoVeiculo = this.movido_veiculo;
-    veiculo.servicoVeiculo = this.servico_veiculo;
-    veiculo.valorVeiculo = this.valor_servico;
-
     if(this.edit) {
       veiculo.id = this.idVeiculoEdit;
 
       this.veiculosServicoService.editar(veiculo);
 
       this.edit = false;
+    } else if(this.marca_veiculo === ''){
+      alert('Não podem haver campos vazios')
+    } else if(this.modelo_veiculo === ''){
+      alert('Não podem haver campos vazios')
+    } else if(this.placa_veiculo === ''){
+      alert('Não podem haver campos vazios')
+    } else if(this.cambio_veiculo === ''){
+      alert('Não podem haver campos vazios')
+    } else if(this.movido_veiculo === ''){
+      alert('Não podem haver campos vazios')
+    } else if(this.servico_veiculo === ''){
+      alert('Não podem haver campos vazios')
+    } else if(this.valor_servico === 0.0){
+      alert('Não podem haver campos vazios')
     } else {
       veiculo.id = this.veiculosServicoService.tamanhoArray() + 1;
 
+      veiculo.marcaVeiculo = this.marca_veiculo;
+      veiculo.modeloVeiculo = this.modelo_veiculo;
+      veiculo.placaVeiculo = this.placa_veiculo;
+      veiculo.cambioVeiculo = this.cambio_veiculo;
+      veiculo.movidoVeiculo = this.movido_veiculo;
+      veiculo.servicoVeiculo = this.servico_veiculo;
+      veiculo.valorVeiculo = this.valor_servico;
+
       this.veiculosServicoService.adicionar(veiculo);
+
+      this.limparAtributos();
     }
 
-    this.limparAtributos();
   }
 
   alterar(veiculo: Veiculo){
