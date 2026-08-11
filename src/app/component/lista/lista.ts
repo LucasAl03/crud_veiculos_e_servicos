@@ -6,11 +6,9 @@ import { Veiculo } from '../../models/veiculo';
 
 import { Router } from '@angular/router';
 
-import { Pesquisa } from '../pesquisa/pesquisa';
-
 @Component({
   selector: 'app-lista',
-  imports: [Pesquisa],
+  imports: [],
   templateUrl: './lista.html',
   styleUrl: './lista.css',
 })
