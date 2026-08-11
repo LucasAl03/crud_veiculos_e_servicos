@@ -34,6 +34,7 @@ export class Lista {
   }
 
   buscaId(vObjVeiculo: Veiculo){
+    confirm('Deseja editar este item?')
     this.router.navigate(['/formulario', vObjVeiculo.id]);
   }
 }
