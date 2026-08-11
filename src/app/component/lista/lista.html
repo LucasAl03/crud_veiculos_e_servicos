@@ -1,6 +1,10 @@
-<app-pesquisa></app-pesquisa>
 <div id="div-lista">
     <h1>Lista de Veículos</h1>
+
+    <div class="div-pesquisa">
+        <h4 for="search">Pesquisa</h4>
+        <input type="text" id="search" placeholder="Busque por marca">
+    </div>
 
     <div id="div-veiculos">
         @for(elem of listar(); track elem.id){
