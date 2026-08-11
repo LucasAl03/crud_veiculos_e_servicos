@@ -1,6 +1,6 @@
-
 .pesquisa{
     color: var(--cor1);
+    margin-top: 20px;
     font-size: 1.5em;
     padding-left: 5%;
     margin-bottom: 10px;
@@ -9,6 +9,9 @@
 .barra-pesquisa{
     margin-left: 5%;
     width: 40%;
+    height: 30px;
     font-size: 1.2em;
+    border-radius: 5px;
+    border: solid 1px;
     margin-bottom: 40px;
 }
