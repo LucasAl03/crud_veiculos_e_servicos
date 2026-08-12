@@ -23,6 +23,10 @@ export class Lista {
     return this.veiculosServicoService.listar();
   }
 
+  pesquisaVeiculos(e: Event){
+    console.log('funcionou?')
+  }
+
   excluir(vObjVeiculo: Veiculo){
     if(confirm("Deseja excluir as informações deste veículo?")){
       this.veiculosServicoService.excluir(Number(vObjVeiculo.id));
