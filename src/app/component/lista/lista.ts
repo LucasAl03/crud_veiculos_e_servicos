@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 import { VeiculosServicoService } from '../../services/veiculos-servico-service';
 
@@ -14,6 +14,10 @@ import { Router } from '@angular/router';
 })
 export class Lista {
 
+  veiculos: Veiculo[] = [];
+
+  txtInput?: string = ''
+
   constructor(
     private router: Router,
     private veiculosServicoService: VeiculosServicoService
@@ -23,9 +27,12 @@ export class Lista {
     return this.veiculosServicoService.listar();
   }
 
-  pesquisaVeiculos(e: Event){
+  /*pesquisaVeiculos(e: Event){
     console.log('funcionou?')
-  }
+
+    return this.veiculos = this.veiculos.filter(elem => elem.marcaVeiculo?.toLowerCase().includes())
+    
+  }*/
 
   excluir(vObjVeiculo: Veiculo){
     if(confirm("Deseja excluir as informações deste veículo?")){
