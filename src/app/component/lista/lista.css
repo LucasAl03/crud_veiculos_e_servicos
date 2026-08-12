@@ -25,19 +25,18 @@ h4{
 }
 
 #search::placeholder{
-    padding: 10px;
-    font-weight: bold;
+    padding: 14px;
     font-size: 1.2em;
 }
 
 #search{ 
-    width: 20%;
+    width: 135px;
     border-radius: 5px;
     height: 30px;
 }
 
 #search:focus{
-    width: 70%;
+    width: 300px;
 }
 
 #div-veiculos {
