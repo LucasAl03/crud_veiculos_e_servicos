@@ -1,10 +1,11 @@
 <div id="div-lista">
     <h1>Lista de Veículos</h1>
 
-    <div class="div-pesquisa">
+    <!---Desiste de fazer a funcionalidade de pesquisa
+        <div class="div-pesquisa">
         <h4>Pesquisa</h4>
-        <input type="text" id="search" /*(input)="pesquisaVeiculos($event)" [(ngModel)]="txtInput"*/ placeholder="Buscar veículo">
-    </div>
+        <input type="text" id="search" (input)="pesquisaVeiculos($any($event.target).value)" placeholder="Buscar veículo">
+    </div>-->
 
     <div id="div-veiculos">
         @for(elem of listar(); track elem.id){
