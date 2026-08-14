@@ -12,7 +12,8 @@ export class VeiculosServicoService {
         this.veiculos.push(pessoa)
     }
 
-    listar(): Veiculo[]{
+    listar(): Veiculo[] {
+
         return this.veiculos
     }
 
