@@ -16,8 +16,6 @@ export class Lista {
 
   veiculos: Veiculo[] = [];
 
-  txtInput?: string = ''
-
   constructor(
     private router: Router,
     private veiculosServicoService: VeiculosServicoService
@@ -27,11 +25,9 @@ export class Lista {
     return this.veiculosServicoService.listar();
   }
 
-  /*pesquisaVeiculos(e: Event){
-    console.log('funcionou?')
+  /*pesquisaVeiculos(input: InputEvent): any{
 
-    return this.veiculos = this.veiculos.filter(elem => elem.marcaVeiculo?.toLowerCase().includes())
-    
+    console.log(`${input}`)
   }*/
 
   excluir(vObjVeiculo: Veiculo){
